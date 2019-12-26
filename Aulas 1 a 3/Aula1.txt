@@ -1,0 +1,36 @@
+ctrl + u, usado em algum navegador ele vai mostrar o codigo por tras daquela pagina.
+
+ctrl + o, usado em algum navegador ele vai servir para abrir o explorador de arquivos. 
+
+<br> é um tag html usada para pular linhas.
+
+Toda tag html tem a caracteristica de começar com o sinal de menor e terminar com 
+o sinal de maior.
+
+<h1> alguma coisa </h1>, esse h vem de heading(titulo, cabeçalho) e essa tag
+tem a finalidade de dar destaque ao texto que esta entre essa tag.
+
+<a href="htttp://www.alura.com.br"> alguma coisa </a> chamada de tag alcora, 
+usada para criar links na web.
+
+HTML é uma linguagem estatica, ja o javascript é uma linguagem 
+dinamica(linguagem realmente de programaçao). 
+
+<script> alguma coisa </script> é uma tag usada para quando o navegador for processar a 
+informaçao dentro dessa tag ele vai processa-la como javascript. 
+
+Metodo alert do javascript permite criar uma janela contendo alguma String, a String 
+que devera ser impressa devera ser passada como argumento.
+
+Tag <meta charset = "UTF-8"> é usada para ler corretamente as acentuaçoes.
+
+Apertando ctrl+shift+c e indo na aba console, temos o depurador do navegador.
+
+Uma convenção muito utilizada é criar arquivos com letras minúsculas e 
+se houver mais de uma palavra usamos um "_" como separador. Além disso, 
+não usamos acentos no nome dos arquivos. Assim, todo arquivo que criarmos 
+até o final do curso utilizará a extensão .html.
+
+Todo navegador (ou Browser, em inglês) consegue ler e entender HTML que é a linguagem 
+utilizada para a apresentação de dados e informações.
+

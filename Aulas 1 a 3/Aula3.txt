@@ -1,0 +1,32 @@
+O processo de "raciocínio" do JavaScript será questionar se determinado trecho está 
+entre aspas, e se estiver, é uma string, caso negativo, será feita uma próxima pergunta:
+trata-se de um número? Caso a resposta seja "não", significa que se trata de uma
+variável.
+
+O prefixo var só é utilizado ao declararmos a variável pela primeira vez, 
+então não é necessário utilizá-lo ao definirmos um novo valor para a variavel ja criada.
+
+O navegador processará a tag <script> linha a linha, na ordem em que foram declaradas.
+
+No javaScript uma variável é case-sensitive
+Isso significa que nomes com letras maiúsculas são diferentes de nomes com letras 
+minúsculas: para um programa em JavaScript, Nome é diferente de nome.
+
+Poderemos arredondar números com muitas casas decimais usando Math.round(). 
+Com o conteúdo entre parênteses de document.write(), definimos o que será exibido na 
+tela, e com Math.round definiremos qual valor será arredondado.
+
+Uma convenção importante: o nome de uma variável sempre se iniciará com uma letra minúscula. Se a variável contém duas palavras, por exemplo "idade + (nome)", a próxima palavra deve ser escrita com a primeira letra maiúscula. Este padrão recebe o nome de camelCase.
+
+No JavaScript, podemos utilizar tanto as aspas simples (') quanto aspas ("). 
+
+<meta charset="UTF-8">
+<script>
+    var IDADE1 = 10;
+    var IDADE2 = "20";
+    var IDADE3 = 12;
+
+    document.write("A média das idades é <br>");
+    document.write( (IDADE1 + IDADE2 + IDADE3) / 3);
+</script>
+Do jeito que o programa esta, a média das idades será 34004.O vilão dessa história é o valor da declaração da variável IDADE2 que é uma string!

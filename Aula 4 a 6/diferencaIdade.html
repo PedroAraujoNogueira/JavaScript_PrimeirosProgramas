@@ -1,0 +1,25 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<br>");
+
+	}
+
+	function mostrar(mensagem){
+
+		document.write(mensagem);
+		pulaLinha();	
+
+	}
+
+	var minhaDataNascimento = 1997;
+	var dataNascimentoIrmao = 2001;
+
+	mostrar("Nossa diferença de idade é de " + 
+		Math.abs(minhaDataNascimento - dataNascimentoIrmao) + " anos.");
+
+
+</script>

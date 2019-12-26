@@ -1,0 +1,1 @@
+prompt() trata-se de uma função do JavaScript, que receberá como parâmetro a pergunta que desejamos fazer ao usuário e retornará o valor que o usuario digitar.

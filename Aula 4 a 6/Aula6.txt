@@ -1,0 +1,21 @@
+O return da função prompt() - que não foi criada por nós, e é do JavaScript -, sempre retorna como texto, não como número. Sempre que usamos o prompt(), o conteúdo é lido como um texto. 
+
+Lemos prompt() sempre como um texto. Se no texto houver um número e fizermos uma operação de multiplicação ou divisão, o JavaScript converte o texto para número, e é por isso que a multiplicação funciona.
+
+parseInt() é uma função existente no JavaScript que foi preparada para receber um texto e converte-lo em número, isso caso o texto seja um numero.
+
+Sempre que formos ler uma entrada, e a intenção for trabalhar com números, temos que fazer o parseInt() para que o valor digitado, que por padrão é lido como texto, seja interpretado como um número.
+
+Como a função prompt sempre retorna o que digitamos no formato texto, ou seja, como um string, é uma boa prática sempre convertermos o valor digitado para número quando nossa intenção é ler um número. Vamos analisar esta instrução:
+var convidados = parseInt(prompt("Número de convidados"));
+A função prompt retorna o que digitamos como string e esse retorno é passado para parseInt. É esta função que recebe uma string e a converte para número. Agora, como temos dois números ligados, não acontecerá mais a concatenação, mas sim a soma.
+
+Quando parseInt recebe um número e não uma string, ele devolve o mesmo número, ou seja, não realiza conversão alguma. Não dá erro, funciona.
+
+A função Math.random() gera um número aleatório. Pressionando a tecla "Enter", ele gerou um número entre 0 e 1, e todas as vezes em que pressionarmos "Enter" surgirá um novo número. Entretanto, queremos que seja gerado um número entre 0 e 10 e para isso multiplicaremos o número gerado por 10, da seguinte forma:
+Math.random() * 10
+
+O primeiro número antes da vírgula sempre estará entre 0 e 9. Como queremos que o resultado esteja entre 0 e 10, utilizaremos a função Math.round() para arredondarmos o resultado de Math.random():
+Math.round(Math.random() * 10);
+
+Utilizando o console.log(), o numeroPensado será exibido no console do navegador, em que poderemos visualizar antes mesmo de inserirmos nosso palpite. Isso nos ajudará a testar ambas condições, de acerto e erro.

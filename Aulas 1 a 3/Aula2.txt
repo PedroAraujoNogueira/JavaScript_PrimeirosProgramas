@@ -1,0 +1,10 @@
+Convençao: as tags html devem vir com letras minusculas, se escrever em letras maiusculas
+tambem funciona, porem foge da convençao e voce sera mal visto por outros programadores.
+
+Metodos em javascript devem ser escritos com letras minusculas, caso contrario o metodo
+nao será aplicado.
+
+document.write() é um metodo usado no javascript para imprimir algo, onde esses algos sao
+passados como argumentos.
+
+As tags usadas na HTML tmb servem para esse metodo(document.write()) em javascript.

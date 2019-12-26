@@ -1,0 +1,57 @@
+Quando utilizamos o <input/>, fazemos com que seja aberto um campo para entrada de texto no navegador.
+
+Criaremos um botão, e a palavra em inglês para isso é "button", assim, vamos usá-la em nosso código: Esta tag, como podemos observar, abre e fecha, diferentemente da <input>. Dentro da tag <button> inseriremos a frase "Compare com o meu segredo":
+
+A função document.querySelector(), atenção para o "S" maiúsculo, serve para inserir a tag que está no mundo HTML na variável do javaScript. Ela receberá como parâmetro o nome da tag que desejamos utilizar.
+
+Para sabermos qual o valor que está inserido na variável, utilizaremos o input(nomeDaVariavel).value.
+
+Declararemos uma variável chamada button e daremos ao document.querySelector() o parâmetro button - o nome da tag.
+
+Para associar ao botão a execução do verifica() utilizaremos o button.onclick, em português, "on click" significa "no clicar", ou seja, queremos que a verificação seja feita ao clique.
+
+Há uma grande diferença entre utilizar os parênteses, ou seja, executar a função, e não utilizá-los, situação em que teremos acesso ao código da função. Para solucionarmos isto removeremos os parênteses do verifica() em button.onclick.
+
+Dessa forma, toda a informação contida em verifica(), isto é, o código, está vinculado ao onclick do botão. Assim, ele estará preparado para executar a verificação sempre que o botão for clicado.
+
+Vimos que, ao abrirmos o console do navegador e fazermos o verifica(), estamos executando a função de forma manual. No entanto, se digitarmos verifica e pressionarmos "Enter", é impresso o código da função. Como nosso objetivo é executar a função ao clique do botão, removemos os parênteses no código, fazendo com que ela fique inserida no onclick e, quando clicamos no botão do navegador, é ele quem insere os parênteses para chamar a função.
+
+Você aprendeu que através de document.write escrevemos na tela, mas o document sabe fazer mais coisas. É através de document.querySelector que podemos ir lá no mundo HTML e trazer o elemento para o mundo JavaScript para que possamos manipulá-lo. Mas cuidado, o correto é querySelector com S maiúsculo. Se por acaso você escrever com 's' minúsculo cometerá um erro de sintaxe. Continuando... O document.querySelector recebe um parâmetro o nome da tag que desejamos buscar do mundo HTML. Ele é mais poderoso do que você imagina e aceita receber outros tipos de parâmetros, mas para nosso treinamento, entender que se passarmos o nome de uma tag HTML ele nos devolverá a tag no mundo JavaScript é suficiente. Há outros jargões envolvidos nesse processo, mas não se preocupe. Você saberá todos eles se quiser continuar seus estudos na linguagem JavaScript.
+
+Para fazermos com que o campo de texto seja esvaziado quando o usuário errar uma tentativa, declararemos que o input.value receberá uma string em branco: input.value = "";
+
+Daremos um foco no campo de texto sempre que o usuário errar o número utilizando a função input.focus().
+
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+    var segredo = Math.round(Math.random() * 10);
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                input.value = "";
+                input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+
+

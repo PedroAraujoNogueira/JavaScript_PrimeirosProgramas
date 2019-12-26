@@ -1,0 +1,9 @@
+Não podemos comparar nenhum valor, como NaN, usando ==. Se você abrir seu console agora e escrever NaN == NaN isso será falso! Esse resultado bizarro é uma característica da linguagem. Para saber se um valor é NaN precisamos usar uma função específica, a isNaN. Essa função recebe um parâmetro e retorna true ou false caso o valor seja NaN ou não.
+
+Ao se deparar com o break(), o JavaScript sai do loop(ou switch) mais interno e parte para a próxima instrução.
+
+Aprendemos a utilizar parseInt() para converter um texto em número. Certo? Contudo, ele converte um texto para um número inteiro e nem sempre queremos abdicar dos números decimais. Vejamos um exemplo:
+var numero = parseInt("12.13");
+O valor de numero será 12. Para que as casas decimais sejam mantidas, usamos o parseFloat():
+var numero = parseFloat("12.13");
+O valor de numero será 12.13.

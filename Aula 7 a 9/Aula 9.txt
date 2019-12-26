@@ -1,0 +1,66 @@
+Precisaremos utilizar um novo tipo de dado, chamado array, inserindo os valores entre colchetes ([]).
+var segredos = [5,7,10,2];
+
+Em um array com um total de 4 posiçoes por exemplo, elas são representadas pelos números 0, 1, 2 e 3. Se digitarmos segredos[4] e pressionarmos "Enter" diversas vezes, ele retornará undefined.
+
+Poderemos utilizar o (nome do array).length, isso gera um retorno da quantidade de elementos contidos naquele array.
+
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredos = [5,7,10,2,3];
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+            var achou = false;
+
+            for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+                if(input.value == segredos[posicao]) {
+
+                    alert("Você ACERTOU!");
+                    achou = true;
+                    break;
+        } 
+            }
+
+                                if(achou == false) {
+
+                                    alert("Você ERROU!");
+                                }
+
+                                input.value = "";
+                input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+
+Todo array é declarado com colchetes, o famoso []. Contudo se tivermos uma declaração desta forma var coisas = []; temos um array, ou seja, uma lista vazia sem qualquer elemento.
+Podemos, no momento da declaração de um array, adicionar elementos. Esses elementos podem ser de qualquer tipo conhecido do JavaScript:
+Exemplo: var coisas = ["Gisele", 12, true];
+Temos como primeiro item do Array uma String, o segundo um número e o último um boleano.
+
+Tudo que é passado para o console.log() é visualizado apenas se o console do navegador for aberto. 
+
+Ao declararmos um array, podemos passar os itens em sua própria declaração, ou podemos utilizar a função push(), da seguinte forma:
+segredos(nomeDaVariavel).push(5); Nesse caso 5 é o valor que queremos passar.
+
+QUESTÃO:
+
+Temos a seguinte lista de frutas:
+var frutas = ["abacaxi", "banana", "melão"];
+Se quisermos adicionar mais um item no array de frutas, o que devemos fazer?	
+RESPOSTA: frutas.push("abacate");
+COMENTÁRIO: Todo array possui a função push que permite "empurrar" elementos para dentro da lista.

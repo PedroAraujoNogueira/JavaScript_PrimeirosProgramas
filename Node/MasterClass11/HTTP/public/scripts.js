@@ -2,6 +2,14 @@ const ul = document.querySelector("ul")
 const input = document.querySelector("input")
 const form = document.querySelector('form')
 
+async function load(){
+    const resultado = await fetch('http://localhost:3000/').then((data) => data.json())
+    // Com o async/await conseguimos simular um comportamento sincrono, ou seja, a funcao
+    // irá esperar o resultado do fetch para depois seguir em frente.
+    resultado.urls.map(url => addElement(url))  
+}
+
+load()
 
 function addElement({ name, url }) {
     const li = document.createElement('li')

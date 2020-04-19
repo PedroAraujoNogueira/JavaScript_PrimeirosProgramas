@@ -16,3 +16,6 @@ no "package.json" e alterar o "scripts.start" de "node server.js" para "nodemon 
 Agora usando o comando "npm run start" ele usará o nodemon para subir o arquivo server.js.
 OBS: O "npm run start" funciona como um atalho para o arquivo server.js que está configurado no 
 package.json em scripts.start.
+
+- CORS é uma segurança que o navegador tem com acessos externos(portas ou endereçoes 
+externos).

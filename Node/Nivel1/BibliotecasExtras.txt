@@ -1,0 +1,2 @@
+1. yarn add uuidv4.
+Essa biblioteca vai gerar um id unico e universal.

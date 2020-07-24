@@ -1,2 +1,0 @@
-Caso apareça a mensagem dizendo que a porta X ja esta em uso voce pode matar o processo usando
-o comando "killall -9 node" e entao tentar usar a porta novamente.

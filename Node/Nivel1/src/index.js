@@ -1,9 +1,11 @@
 // Aqui criaremos um servidor HTTP.
 
 const express = require('express')
+const cors = require('cors')
 const { uuid, isUuid } = require('uuidv4')
 
 const app = express()
+app.use(cors()) // Dessa forma o back-end está dizendo que permite que qualquer front-end vai ter acesso ao nosso back-end.
 
 // Por padrão o express não interpreta o que enviamos para ele em JSON, para dizermos ao express que queremos receber informações no formato de JSON usamos o express.json()  
 app.use(express.json()) // O método use() é usado quando queremos adicionar alguma função que todas as rotas vão ter que passar por essa função.
@@ -127,8 +129,9 @@ app.get('/projects1', logRequests1, (request, response) => {
     const results = title ? 
         projects.filter(project => project.title.includes(title)) : projects
         // O método includes() determina se uma string pode ser encontrada dentro de outra string, retornando true ou false, conforme apropriado.
-
+        
     return response.json(results)
+    
 })
 
 app.post('/projects1', (request, response) => {

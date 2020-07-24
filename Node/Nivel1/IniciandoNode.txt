@@ -15,3 +15,5 @@ Há duas formas de rodar o servidor através do nodemon:
 }
 Então agora só precisamos escrever no terminal o nome do script que acabamos de criar. No caso fica
 yarn dev.
+
+5. yarn add cors. Toda vez que o front-end vai se comunicar com o back-end ele precisa passar pelas técnicas de segurança do back-end, para evitar que qualquer front-end possa se comunicar com nosso back-end por exemplo. Uma dessas técnicas de segurança é o cors ou Cross-Origin Resource Sharing (Compartilhamento de recursos com origens diferentes). Ou seja, o front-end só conseguirá se comunicar com o back-end se o cors do back-end estiver permitindo acesso para aquele front-end.
